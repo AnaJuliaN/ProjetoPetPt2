@@ -9,15 +9,15 @@ if($hidden == 1) {
     $password = $_POST['password'];
     $cep = $_POST['cep'];
     $rua = $_POST['rua'];
-    $city = $_POST['city'];
+    $city = $_POST['cidade'];
     $uf = $_POST['uf'];
 
    try {
-    $sql = "INSERT INTO cadastro (name, email, password, cep, rua, city, uf) 
-            VALUES ('$name', '$email', '$password', '$cep', '$rua', '$city', '$uf')";
+    $sql = "INSERT INTO cadastro (name, email, password, cep, rua, cidade, uf) 
+            VALUES ('$name', '$email', '$password', '$cep', '$rua', '$cidad', '$uf')";
     $pdo->exec($sql); // Executa a inserção
 
-    header("Location: incio.php");
+    header("Location: inicio.php");
 
    } catch (PDOException $e) {
         if ($e->getCode() == 23000) { // Código de erro para violação de índice único

@@ -26,8 +26,8 @@
         <a href="institucional2.html"> Institucional </a>
         <a href="ong2.html"> ONG's </a>
         <a href="adote2.html"> Quero Adotar </a>
-        <a href="doar.php"> Quero Doar </a>
-        <a href="denuncia.php" class="active"> Denuncia </a>
+        <a href="doar.php" class="active"> Quero Doar </a>
+        <a href="denuncia.php"> Denuncia </a>
       </nav>
     </header>
 
@@ -120,43 +120,115 @@
     <main id="form_container">
       <div id="form_header">
         <h1 id="form_title">
-          Formulário para denúncia
+          Formulário para adoção
         </h1>
       </div>
 
-      <form action="efetuar_denuncia.php" method="POST">
+      <form action="recebe_form.php" method="POST">
         <input type="hidden" name="hidden" value="1">
         <div id="input_container">
           <div class="input-box">
-            <label for="titulo" class="form-label">Titulo da denúncia</label>
+            <label for="nome" class="form-label">Nome completo</label>
           <div class="input-field">
-            <input type="text" name="titulo" id="titulo" class="form-control" placeholder="">
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="">
             <i class="fa-solid fa-paw"></i>
           </div>
         </div>
 
           <div class="input-box">
-            <label for="data_denuncia" class="form-label">Data da denúncia</label>
+            <label for="tel" class="form-label">Telefone</label>
           <div class="input-field">
-            <input type="date" name="data_denuncia" id="data_denuncia" class="form-control" placeholder="">
+            <input type="tel" name="telefone" id="telefone" class="form-control" placeholder="">
             <i class="fa-solid fa-paw"></i>
           </div>
         </div>
 
           <div class="input-box">
-            <label for="descricao" class="form-label">Descrição da denúncia</label>
+            <label for="idade" class="form-label">Idade</label>
           <div class="input-field">
-            <textarea name="descricao" id="descricao" class="form-control" placeholder=""></textarea>
+            <input type="text" name="idade" id="idade" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+          <div class="input-box">
+            <label for="profissao" class="form-label">Profissão</label>
+          <div class="input-field">
+            <input type="text" name="profissao" id="profissao" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+          <div class="input-box">
+            <label for="residencia" class="form-label">Tipo de residência (casa/ap)</label>
+          <div class="input-field">
+            <input type="text" name="residencia" id="residencia" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+          <div class="input-box">
+            <label for="espaco" class="form-label">Há espaço externo seguro para o animal?</label>
+          <div class="input-field">
+            <input type="text" name="espaco" id="espaco" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+          <div class="input-box">
+            <label for="acordo" class="form-label">Todos os moradores estão de acordo com a adoção?</label>
+          <div class="input-field">
+            <input type="text" name="acordo" id="acordo" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+          <div class="input-box">
+            <label for="teve_animais" class="form-label">Já teve animais de estimação?</label>
+          <div class="input-field">
+            <input type="text" name="animais" id="animais" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label for="pq_animais" class="form-label">Por que não possui mais esses animais?</label>
+          <div class="input-field">
+            <input type="text" name="pq_animais" id="pq_animais" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label for="tempo" class="form-label">Quanto tempo do seu dia poderá dedicar ao animal?</label>
+          <div class="input-field">
+            <input type="text" name="tempo" id="tempo" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label for="deseja_adotar" class="form-label">Por que deseja adotar um animal de estimação?</label>
+          <div class="input-field">
+            <input type="text" name="deseja_adotar" id="deseja_adotar" class="form-control" placeholder="">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+        </div>
+
+        <div class="input-box">
+            <label for="ciente" class="form-label">Está ciente da importância da vacinação e vermifugação?</label>
+          <div class="input-field">
+            <input type="text" name="ciente" id="ciente" class="form-control" placeholder="">
             <i class="fa-solid fa-paw"></i>
           </div>
         </div>
         </div>
 
-        <button type="submit" class="btn-default">
-          <i class="fa-solid fa-check">
-            Enviar
-          </i>
-        </button>
+          <button type="submit" class="btn-default">
+            <i class="fa-solid fa-check">
+              Enviar
+            </i>
+          </button>
       </form>
     </main>
 

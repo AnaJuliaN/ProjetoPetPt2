@@ -124,7 +124,8 @@
         </h1>
       </div>
 
-      <form>
+      <form action="cadastro_doar.php" method="POST">
+        <input type="hidden" name="hidden" value="1">
         <div id="input_container">
           <div class="input-box">
             <label for="nome_pet" class="form-label">Nome do pet</label>
@@ -153,7 +154,7 @@
           <div class="input-box">
             <label for="tel" class="form-label">Telefone para contato</label>
           <div class="input-field">
-            <input type="tel" name="nome_pet" id="telefone" class="form-control" placeholder="(00) 00000-0000">
+            <input type="tel" name="telefone" id="telefone" class="form-control" placeholder="(00) 00000-0000">
             <i class="fa-solid fa-paw"></i>
           </div>
         </div>
@@ -199,11 +200,11 @@
         </div>
         </div>
 
-        <button type="submit" class="btn-default">
-          <i class="fa-solid fa-check">
-            Enviar
-          </i>
-        </button>
+          <button type="submit" class="btn-default">
+            <i class="fa-solid fa-check">
+              Enviar
+            </i>
+          </button>
       </form>
     </main>
 
