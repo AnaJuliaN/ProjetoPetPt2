@@ -101,6 +101,9 @@
         <div class="form-container sign-in">
             <form action="logar.php" method="POST"> 
                 <h1>Entrar</h1>
+                <div class="trilho" id="trilho">
+                    <div class="indicador"></div>
+                </div>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>

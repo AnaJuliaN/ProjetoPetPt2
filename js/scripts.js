@@ -5,6 +5,9 @@ let items = container.querySelectorAll('.list .item')
 let indicator = document.querySelector('.indicators')
 let dots = indicator.querySelectorAll('ul li')
 let list = container.querySelector('.list')
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
+let home= document.querySelector('.home')
 
 let active = 0
 let firstPosition = 0
@@ -35,3 +38,9 @@ prevButton.onclick = () => {
   setSlider()
   items[active].classList.add('active')
 }
+
+trilho.addEventListener('click', () => {
+  trilho.classList.toggle('light')
+  body.classList.toggle('light')
+  home.classList.toggle('light')
+})

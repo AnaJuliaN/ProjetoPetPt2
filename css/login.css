@@ -9,7 +9,7 @@
 
 body{
     background-color: #e7af81;
-    background: linear-gradient(to right, #e6cfcf, #e7af81);
+    /*background: linear-gradient(to right, #e6cfcf, #e7af81);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,3 +214,60 @@ a{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* -- CSS ACESSIBILIDADE -- */
+
+.container .trilho{
+    width: 50px;
+    height: 20px;
+    background-color: #c3c3c3;
+    align-items: end;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+  
+.container .trilho .indicador{
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+  
+.container .trilho.light{
+    background-color: #000000;
+}
+  
+.container .trilho.light .indicador{
+    left: 30px;
+    background-color: #4d4d4d;
+}
+  
+body.light .container{
+    background-color: #4d4d4d;
+}
+
+body.light form{
+    background-color: #4d4d4d;
+}
+
+body.light span{
+    color: #fff;
+}
+
+body.light h1{
+    color: #fff;
+}
+
+body.light a{
+    color: #fff;
+}
+
+body.light{
+    background-color: #222;
+}
+  

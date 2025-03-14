@@ -29,6 +29,9 @@
         <a href="doar.php" class="active"> Quero Doar </a>
         <a href="denuncia.php"> Denuncia </a>
       </nav>
+      <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+    </div>
     </header>
 
     <section class="container">
